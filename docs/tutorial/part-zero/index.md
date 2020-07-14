@@ -1,155 +1,158 @@
 ---
-title: Set Up Your Development Environment
+title: Asenna sinun kehitysympäristö
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Before you start building your first Gatsby site, you’ll need to familiarize yourself with some core web technologies and make sure that you have installed all required software tools.
+Ennen kuin aloitat sinun ensimmäisen Gatsby-sivuston rakentamisen, sinun on perehdyttävä joihinkin ydin web-teknologioihin ja varmistettava, että olet asentanut kaikki vaadittavat ohjelmistotyökalut.
 
-## Familiarize yourself with the command line
+## Tutustu komentoriviin
 
-The command line is a text-based interface used to run commands on your computer. You’ll also often see it referred to as the terminal. In this tutorial, we’ll use both interchangeably. It’s a lot like using the Finder on a Mac or Explorer on Windows. Finder and Explorer are examples of graphical user interfaces (GUI). The command line is a powerful, text-based way to interact with your computer.
+Komentorivi on tekstipohjainen käyttöliittymä, jota käytetään komentojen suorittamiseen tietokoneellasi. Saatat myös nähdä, että sitä kutsutaan terminaaliksi. Käytämme tässä tutoriaalissa molempia keskenään vaihtokelpoisesti.
+Se on paljon kuin Finderin käyttö Macissa tai Resurssienhallinta Windowsissa. Finder ja Explorer ovat esimerkkejä graafisista käyttöliittymistä (GUI). Komentorivi on tehokas, tekstipohjainen tapa olla vuorovaikutuksessa tietokoneesi kanssa.
 
-Take a moment to locate and open up the command line interface (CLI) for your computer. Depending on which operating system you are using, see [**instructions for Mac**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/), [**instructions for Windows**](https://www.lifewire.com/how-to-open-command-prompt-2618089) or [**instructions for Linux**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
+_**Huom:** Kaikki ohjeet ovat englanniksi._
 
-_**Note:** If you’re new to the command line, "running" a command, means "writing a given set of instructions in your command prompt, and hitting the Enter key". Commands will be shown in a highlighted box, something like `node --version`, but not every highlighted box is a command! If something is a command it will be mentioned as something you have to run/execute._
+Käytä hetki etsiäksesi ja avataksesi komentoriviliittymä (CLI) tietokoneellesi. Riippuen mitä käyttöjärjestelmää käytät, katso [**ohjeet Macille**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/), [**ohjeet Windowsille**](https://www.lifewire.com/how-to-open-command-prompt-2618089) tai [**ohjeet Linuxille**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
 
-## Install Node.js for your appropriate operating system
+_**Huom:** Jos olet uusi komentoriville, "käynnissä" komento, tarkoittaa "kirjoittamalla annetut ohjeet komentokehotteessasi, ja painamalla Enter-näppäintä". Komennot näytetään korostettuna ruudussa, jotakuinkin `node --version`, but kaikki korostetut ruudut eivät ole komentoja! Jos jokin on komento se mainitaan, joka sinun täytyy suorittaa._
 
-Node.js is an environment that can run JavaScript code outside of a web browser. Gatsby is built with Node.js. To get up and running with Gatsby, you’ll need to have a recent version installed on your computer. npm comes bundled with Node.js so if you don't have npm, chances are that you don't have Node.js either.
+## Asenna Node.js sopivalle käyttöjärjestelmällesi
 
-### Mac instructions
+Node.js on ympäristö, joka voi suorittaa JavaScript-koodia verkkoselaimen ulkopuolella. Gatsby on rakennettu Node.js:llä. Jotta pääset alkuun Gatsbyn kanssa, tietokoneellasi on oltava asennettuna viimeisin versio. npm sisältyy Node.js-pakettiin, joten jos sinulla ei ole npm:tä, on todennäköistä, että sinulla ei ole myöskään Node.js:tä.
 
-To install Gatsby and Node.js on a Mac, it is recommended to use [Homebrew](https://brew.sh/). A little set-up in the beginning can save you from some headaches later on!
+### Mac ohjeet
 
-#### How to install or verify Homebrew on your computer:
+Kun asentaa Gatsbyn ja Node.js:n Macille, on suositeltavaa käyttää [Homebrewiä](https://brew.sh/). Pieni asennus alussa voi pelastaa sinut päänvaivoista myöhemmin!
 
-1. Open your Terminal.
-2. See if Homebrew is installed. You should see "Homebrew" and a version number.
+#### Kuinka asentaa tai varmistaa Homebrewin tietokoneellasi:
+
+1. Avaa terminaali.
+2. Katso onko Homebrew asennettu. Sinun pitäisi nähdä "Homebrew" ja versionumero.
 
 ```shell
 brew -v
 ```
 
-3. If not, download and install [Homebrew with the instructions](https://docs.brew.sh/Installation).
-4. Once you've installed Homebrew, repeat step 2 to verify.
+3. Jos ei, lataa ja asenna [Homebrew ohjeiden avulla](https://docs.brew.sh/Installation).
+4. Kun olet asentanut Homebrewin, toista vaihe 2 vahvistaaksesi.
 
-#### Install Xcode Command Line Tools:
+#### Asenna Xcode Komentorivityökalut:
 
-1. Open your Terminal.
-2. Install Xcode Command line tools by running:
+1. Avaa terminaali.
+2. Asenna Xcode Komentorivityökalut suorittamalla:
 
 ```shell
 xcode-select --install
 ```
 
-> 💡 If that fails, download it [directly from Apple's site](https://developer.apple.com/download/more/), after signing-in with an Apple developer account.
+> 💡 Jos se epäonnistuu, lataa se [suoraan Applen sivulta](https://developer.apple.com/download/more/), kirjautumisen jälkeen Applen kehittäjätilillä.
 
-3. After being prompted to start the installation, you'll be prompted again to accept a software license for the tools to download.
+3. Kun sinua kehotetaan aloittamaan asennus, sinua pyydetään uudestaan hyväksymään ladattavien työkalujen ohjelmistolisenssi.
 
-#### Install Node
+#### Asenna Node
 
-1. Open your Terminal
-2. Install node with Homebrew:
+1. Avaa terminaali.
+2. Asenna node Homebrewin avulla:
 
 ```shell
 brew install node
 ```
 
-> 💡 If you don't want to install it through Homebrew, download the latest Node.js version from [the official Node.js website](https://nodejs.org/en/), double click on the downloaded file and go through the installation process.
+> 💡 Jos et halua asentaa sitä suoraan Homebrewin kautta, lataa uusin Node.js versio [viralliselta Node.js-verkkosivustolta](https://nodejs.org/en/), kaksoisnapsauta ladattua tiedostoa ja käy läpi asennusprosessi.
 
-### Windows Instructions
+### Windows ohjeet
 
-- Download and install the latest Node.js version from [the official Node.js website](https://nodejs.org/en/)
+- Lataa ja asenna uusin Node.js versio [viralliselta Node.js-verkkosivustolta](https://nodejs.org/en/)
 
-### Linux Instructions
+### Linux ohjeet
 
-Install nvm (Node Version Manager) and needed dependencies. nvm is used to manage Node.js and all its associated versions.
+Asenna nvm (Node Version Manager) ja tarvittavat riippuvuudet. nvm:tä käytetään Node.js:n ja kaikkien siihen liittyvien versioiden hallintaan.
 
-> 💡 When installing a package, if it asks for confirmation, type `y` and press enter.
+> 💡 Kun asennat pakettia, jos se kysyy vahvistusta, kirjoita `y` ja paina enter.
 
-Select your distro:
+Valitse distro:
 
-- [Ubuntu, Debian, and other apt based distros](#ubuntu-debian-and-other-apt-based-distros)
-- [Arch, Manjaro and other pacman based distros](#arch-manjaro-and-other-pacman-based-distros)
-- [Fedora, RedHat, and other dnf based distros](#fedora-redhat-and-other-dnf-based-distros)
+- [Ubuntu, Debian, ja muut apt pohjautuvat distrot](#ubuntu-debian-ja-muut-apt-pohjautuvat-distrot)
+- [Arch, Manjaro, ja muut pacman pohjautuvat distrot](#arch-manjaro-ja-muut-pacman-pohjautuvat-distrot)
+- [Fedora, RedHat, ja muut dnf pohjautuvat distrot](#fedora-redhat-ja-muutr-dnf-pohjautuvat-distrot)
 
 > 💡 If the Linux distribution you are using is not listed here, please find instructions on the web.
 
-#### Ubuntu, Debian, and other `apt` based distros:
+#### Ubuntu, Debian, ja muut `apt` pohjautuvat distrot:
 
-1. Make sure your Linux distribution is ready to go run an update and an upgrade:
+1. Varmista, että Linux-jakelusi on valmis käynnistämään päivityksen ja parannuksen:
 
 ```shell
 sudo apt update
 sudo apt -y upgrade
 ```
 
-2. Install curl which allows you to transfer data and download additional dependencies:
+2. Asenna curl, jonka avulla voit siirtää tietoja ja ladata lisäriippuvuuksia:
 
 ```shell
 sudo apt-get install curl
 ```
 
-3. After it finishes installing, download the latest nvm version:
+3. Lataa asennuksen jälkeen viimeisin nvm-versio:
 
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 ```
 
-4. Confirm this has worked. The output should be a version number.
+4. Vahvista, että tämä on toiminut. Ulostulon tulee olla versionumero.
 
 ```shell
 nvm --version
 ```
 
-5. Continue with the section: [Set default Node.js version](#set-default-nodejs-version)
+5. Jatka kohdasta: [Aseta oletus Node.js-versio](#aseta-oletus-nodejs-versio)
 
-#### Arch, Manjaro and other `pacman` based distros:
+#### Arch, Manjaro, ja muut `pacman` pohjautuvat distrot:
 
-1. Make sure your distribution is ready to go:
+1. Varmista, että jakelusi on valmis menemään:
 
 ```shell
 sudo pacman -Sy
 ```
 
-2. These distros come installed with curl, so you can use that to download nvm:
+2. Nämä distrot on asennettu curl-ohjelmalla, joten voit käyttää sitä nvm:n lataukseen:
 
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 ```
 
-3. Before using nvm, you need to install additional dependencies by running:
+3. Ennen nvm:n käyttöä sinun on asennettava lisäriippuvuudet suorittamalla:
 
 ```shell
 sudo pacman -S grep awk tar
 ```
 
-4. Confirm this has worked. The output should be a version number.
+4. Vahvista, että tämä on toiminut. Ulostulon tulee olla versionumero.
 
 ```shell
 nvm --version
 ```
 
-5. Continue with the section: [Set default Node.js version](#set-default-nodejs-version)
+5. Jatka kohdasta: [Aseta oletus Node.js-versio](#aseta-oletus-nodejs-versio)
 
-#### Fedora, RedHat, and other `dnf` based distros:
+#### Fedora, RedHat, ja muut `dnf` pohjautuvat distrot:
 
-1. These distros come installed with curl, so you can use that to download nvm:
+1. Nämä distrot on asennettu curl-ohjelmalla, joten voit käyttää sitä nvm:n lataukseen:
 
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 ```
 
-2. Confirm this has worked. The output should be a version number.
+2. Vahvista, että tämä on toiminut. Ulostulon tulee olla versionumero.
 
 ```shell
 nvm --version
 ```
 
-3. Continue with the section: [Set default Node.js version](#set-default-nodejs-version)
+3. Jatka kohdasta: [Aseta oletus Node.js-versio](#aseta-oletus-nodejs-versio)
 
-#### Set default Node.js version
+#### Aseta oletus Node.js-versio
 
 When nvm is installed, it does not default to a particular node version. You’ll need to install the version you want and give nvm instructions to use it. This example uses the version 10 release, but more recent version numbers can be used instead.
 
