@@ -5,14 +5,14 @@ disableTableOfContents: true
 
 Tervetuloa Gatsbyyn! Olemme iloisia, että olet täällä. Tämän tutoriaalin tarkoituksena on ohjata sinut läpi valmisteluiden ja ensimmäisen Gatsby-sivusi julkaisemisen aloituspohjaa käyttäen. Prosessin aikana esittelemme sinulle joitakin yleisimpiä web-kehityksen aiheita ja käymme läpi, miten Gatsby-sivustot rakentuvat.
 
-> The full tutorial is intended to be as accessible as possible to people without much web development experience (yet!) — no need to be an expert. If you prefer to jump straight to code, feel free to skip the step-by-step tutorial and see the [quick start](/docs/quick-start/) page.
+> Tämän tutoriaalin tarkoitus on olla mahdollisimman helposti lähestyttävä ihmisille, joilla ei ole (vielä!) paljoa kokemusta web-kehittämisestä – sinun ei tarvitse olla ekspertti. Jos haluat mieluummin hypätä suoraan koodin pariin, voit jättää vaiheittaisen tutoriaalin väliin ja katsoa [pika-aloitussivun](/docs/quick-start).
 
-## Gatsby fundamentals
+## Gatsbyn perusteet
 
-0. [Set up your development environment](/tutorial/part-zero/): We'll introduce you to core technologies that power Gatsby, and guide you through setting up your development environment.
-1. [Get to know Gatsby building blocks](/tutorial/part-one/): Starting new projects, developing, and deploying sites.
-1. [Introduction to using CSS in Gatsby](/tutorial/part-two/): Explore libraries like Typography.js and CSS Modules.
-1. [Building nested layouts in Gatsby](/tutorial/part-three/): Layouts are sections of your site that are reused across multiple pages like headers and footers.
+0. [Valmistele kehitysympäristösi](/tutorial/part-zero/): Esittelemme sinulle ydinteknologiat, joiden avulla Gatsby toimii, ja ohjaamme sinut kehitysympäristön asentamisen läpi.
+1. [Tutustu Gatsbyn rakennuspalikoihin](/tutorial/part-one/): Uusien projektien aloittaminen, kehitys, ja sivustojen julkaiseminen.
+1. [Johdanto CSS:n käyttöön Gatsbyssa](/tutorial/part-two/): Tutustu kirjastoihin kuten Typography.js ja CSS Modules.
+1. [Sisäkkäisten asetelmien muodostaminen Gatsbyssa](/tutorial/part-three/): Asetelmat ovat sivustosi osia, esimerkiksi ylä- ja alatunnisteita, joita voi käyttää useilla sivuilla.
 
 ## Intermediate tutorials
 
