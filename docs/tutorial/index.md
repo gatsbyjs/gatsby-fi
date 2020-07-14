@@ -1,9 +1,9 @@
 ---
-title: Gatsby.js Tutorials
+title: Gatsby.js tutoriaalit
 disableTableOfContents: true
 ---
 
-Welcome to Gatsby! We’re glad you’re here. The goal of this tutorial is to guide you through setting up and deploying your first Gatsby site using a starter template. As we walk through that process, we’ll introduce some more general web development topics, and go over the underlying structure of a Gatsby site.
+Tervetuloa Gatsbyyn! Olemme iloisia, että olet täällä. Tämän tutoriaalin tarkoituksena on ohjata sinut läpi valmisteluiden ja ensimmäisen Gatsby-sivusi julkaisemisen aloituspohjaa käyttäen. Prosessin aikana esittelemme sinulle joitakin yleisimpiä web-kehityksen aiheita ja käymme läpi, miten Gatsby-sivustot rakentuvat.
 
 > The full tutorial is intended to be as accessible as possible to people without much web development experience (yet!) — no need to be an expert. If you prefer to jump straight to code, feel free to skip the step-by-step tutorial and see the [quick start](/docs/quick-start/) page.
 
@@ -11,8 +11,8 @@ Welcome to Gatsby! We’re glad you’re here. The goal of this tutorial is to g
 
 0. [Set up your development environment](/tutorial/part-zero/): We'll introduce you to core technologies that power Gatsby, and guide you through setting up your development environment.
 1. [Get to know Gatsby building blocks](/tutorial/part-one/): Starting new projects, developing, and deploying sites.
-2. [Introduction to using CSS in Gatsby](/tutorial/part-two/): Explore libraries like Typography.js and CSS Modules.
-3. [Building nested layouts in Gatsby](/tutorial/part-three/): Layouts are sections of your site that are reused across multiple pages like headers and footers.
+1. [Introduction to using CSS in Gatsby](/tutorial/part-two/): Explore libraries like Typography.js and CSS Modules.
+1. [Building nested layouts in Gatsby](/tutorial/part-three/): Layouts are sections of your site that are reused across multiple pages like headers and footers.
 
 ## Intermediate tutorials
 
