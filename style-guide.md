@@ -21,7 +21,7 @@ export default () => (
 ✅ DO:
 
 ```js
-// Ejemplo
+// Esimerkki
 import React from "react"
 export default () => (
   <div style={{ color: `purple`, fontSize: `72px` }}>Hello Gatsby!</div>
@@ -31,30 +31,30 @@ export default () => (
 ✅ ALSO OKAY:
 
 ```js
-// Ejemplo
+// Esimerkki
 import React from "react"
 export default () => (
-  <div style={{ color: `purple`, fontSize: `72px` }}>¡Hola Gatsby!</div>
+  <div style={{ color: `purple`, fontSize: `72px` }}>Hei Gatsby!</div>
 )
 ```
 
 ❌ DON'T:
 
 ```js
-// Ejemplo
+// Esimerkki
 import React from "react"
 export default () => (
   // 'purple' is a CSS keyword
-  <div style={{ color: `morado`, fontSize: `72px` }}>¡Hola Gatsby!</div>
+  <div style={{ color: `violetti`, fontSize: `72px` }}>Hei Gatsby!</div>
 )
 ```
 
 ❌ DEFINITELY DON'T:
 
 ```js
-importar Reaccionar desde "reaccionar"
-exportar defecto () => (
-   <div estilo = {{color: `morado`, fontSize:` 72px`}}> ¡Hola Gatsby! </div>
+import React from "react"
+export oletusarvo () => (
+   <div tyyli = {{color: `violetti`, fontSize:` 72px`}}>Hei Gatsby!</div>
 )
 ```
 
@@ -74,7 +74,7 @@ React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object).
 ✅ OK:
 
 ```md
-Los elementos de React son [inmutables](https://es.wikipedia.org/wiki/Objeto_inmutable).
+Reactin elementit ovat muuttumattomia.
 ```
 
 For links that have no equivalent (Stack Overflow, YouTube videos, etc.), just use the English link.
