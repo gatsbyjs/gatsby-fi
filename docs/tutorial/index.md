@@ -30,8 +30,8 @@ Gatsby-pluginit ovat tapa kapseloida, uudelleenkäyttää ja koostaa toiminnalli
 
 Opi tekemään ja käyttämään teemoja ja plugineja askel askeleelta [plugin- ja teematutoriaaleissa](/tutorial/plugin-and-theme-tutorials/).
 
-## Additional tutorials
+## Muut tutoriaalit
 
-There are many use cases for Gatsby, some of which aren't covered in the first set of tutorials to keep you focused while learning. Gatsby's Additional Tutorials section is a collection of resources showing how to complete even more Gatsby tasks step-by-step, such as using source plugins for images and CMS content.
+Gatsbylla on useita käyttötapauksia, joista kaikkia ei ole käsitelty ensimmäisissä tutoriaaleissa, jotta voit keskittyä oppimiseen. Gatsbyn muiden tutoriaalien osio on kokoelma resursseja, jotka näyttävät askel askeleelta kuinka saada Gatsbylla entistä enemmän aikaan, kuten datalähdeplugineiden käyttö kuvien ja sisällönhallintajärjestelmistä saatavien sisältöjen käyttöön.
 
-Go deeper with [additional Gatsby tutorials](/tutorial/additional-tutorials/).
+Perehdy tarkemmin lukemalla [muut Gatsby-tutoriaalit](/tutorial/additional-tutorials/).
