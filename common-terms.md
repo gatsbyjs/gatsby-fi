@@ -14,7 +14,8 @@ Pyritään pitämään lista aakkosjärjestyksessä.
 | Gatsby site                      | Gatsby-sivusto             |
 | globally                         | globaalisti                |
 | layout                           | ulkoasu                    |
+| locally                          | lokaalisti                 |
 | set up (development environment) | pystyttää kehitysympäristö |
 | starter template                 | aloitusmalli               |
 | template                         | malli                      |
-| terminal                         | terminaal                  |
+| terminal                         | terminaali                 |
