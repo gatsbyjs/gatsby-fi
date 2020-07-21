@@ -24,11 +24,11 @@ Näissä keskitason tutoriaaleissa opit hakemaan dataa lähes mistä tahansa Gat
 7. [Luo sivuja ohjelmallisesti datan perusteella](/tutorial/part-seven/): Opi luomaan sivuja ohjelmallisesti blogipostauksiasi varten.
 8. [Sivuston valmistelu julkaisua varten](/tutorial/part-eight/): Opi auditoimaan sivustosi suorituskyky, parhaat käytänteet, SEO yms.
 
-## Plugin & Theme tutorials
+## Plugin- ja teematutoriaalit
 
-Gatsby plugins are a way to encapsulate, re-use, and compose functionality, such as data sourcing. Gatsby themes are a type of plugin which abstracts your default configuration (shared functionality, data sourcing, design) out of your site and into an installable package.
+Gatsby-pluginit ovat tapa kapseloida, uudelleenkäyttää ja koostaa toiminnallisuuksia, kuten datan hakemista. Gatsby-teemat ovat plugineja, jotka abstrahoivat oletuskonfiguraatiosi (jaetut toiminnallisuudet, datan hakeminen, design) pois sivustostasi erikseen asennettavaksi paketiksi.
 
-Learn how to build and use plugins and themes step-by-step in the [Plugin and Theme Tutorials](/tutorial/plugin-and-theme-tutorials/).
+Opi tekemään ja käyttämään teemoja ja plugineja askel askeleelta [plugin- ja teematutoriaaleissa](/tutorial/plugin-and-theme-tutorials/).
 
 ## Additional tutorials
 
