@@ -77,7 +77,7 @@ Valitse distro:
 - [Arch, Manjaro, ja muut pacman pohjautuvat distrot](#arch-manjaro-ja-muut-pacman-pohjautuvat-distrot)
 - [Fedora, RedHat, ja muut dnf pohjautuvat distrot](#fedora-redhat-ja-muutr-dnf-pohjautuvat-distrot)
 
-> 💡 If the Linux distribution you are using is not listed here, please find instructions on the web.
+> 💡 Jos käyttämääsi Linux-jakelua ei ole lueteltu tässä, etsi ohjeita verkosta.
 
 #### Ubuntu, Debian, ja muut `apt` pohjautuvat distrot:
 
@@ -110,7 +110,7 @@ nvm --version
 
 #### Arch, Manjaro, ja muut `pacman` pohjautuvat distrot:
 
-1. Varmista, että jakelusi on valmis menemään:
+1. Varmista, että jakelusi on valmis käyttöön:
 
 ```shell
 sudo pacman -Sy
@@ -176,7 +176,7 @@ Kun olet suorittanut asennusvaiheet ja tarkistanut, että kaikki on asennettu oi
 
 ## Asenna Git
 
-Git on ilmainen ja avoimen lähdekoodin hajautettu versionhallintajärjestelmä, joka on suunniteltu käsittelemään kaikkea pienistä erittäin suuriin projekteihin nopeudella ja tehokkuudella. Kun asennat Gatsby "aloitussivun", Gatsby käyttää Git:iä kulissien takana ladataksesi ja install the required files for your starter. You will need to have Git installed to set up your first Gatsby site.
+Git on ilmainen ja avoimen lähdekoodin hajautettu versionhallintajärjestelmä, joka on suunniteltu käsittelemään kaikkea pienistä erittäin suuriin projekteihin nopeudella ja tehokkuudella. Kun asennat Gatsby "aloitussivun", Gatsby käyttää Git:iä kulissien takana ladataksesi ja asenna starterille tarvittavat tiedostot. Sinulla on oltava asennettuna Git asentaaksesi ensimmäisen Gatsby-sivustosi.
 
 Git:in lataus- ja asennusvaiheet riippuvat käyttöjärjestelmästäsi. Seuraa opasta järjestelmällesi:
 
@@ -186,9 +186,9 @@ Git:in lataus- ja asennusvaiheet riippuvat käyttöjärjestelmästäsi. Seuraa o
 
 ## Gatsby CLI:n käyttö
 
-Gatsby CLI -työkalun avulla voit luoda nopeasti uusia Gatsby-pohjaisia sivustoja ja suorittaa komentoja Gatsby-sivustojen kehittämiseen. Se on julkaistu npm-paketti.
+Gatsby CLI-työkalun avulla voit luoda nopeasti uusia Gatsby-pohjaisia sivustoja ja suorittaa komentoja Gatsby-sivustojen kehittämiseen. Se on julkaistu npm paketti.
 
-Gatsby CLI on saatavana npm:n kautta, ja se tulisi asentaa maailmanlaajuisesti suorittamalla:
+Gatsby CLI on saatavana npm:n kautta, ja se tulisi asentaa globaalisti suorittamalla:
 
 ```shell
 npm install -g gatsby-cli
@@ -209,7 +209,7 @@ gatsby --help
 
 ## Luo Gatsby-sivusto
 
-Nyt olet valmis käyttämään Gatsby CLI työkalua ensimmäisen Gatsby-sivustosi luomiseen. Työkalun avulla voit ladata “starter” (osittain rakennettuja sivustoja, joissa on joitain oletusasetuksia), jotta voit siirtyä nopeammin tietyn tyyppisen sivuston luomiseen. The “Hello World” starter you’ll be using here is a starter with the bare essentials needed for a Gatsby site.
+Nyt olet valmis käyttämään Gatsby CLI-työkalua ensimmäisen Gatsby-sivustosi luomiseen. Työkalun avulla voit ladata “starter” (osittain rakennettuja sivustoja, joissa on joitain oletusasetuksia), jotta voit siirtyä nopeammin tietyn tyyppisen sivuston luomiseen. Tässä käyttämäsi "Hello World"-alusta on starter, jolla on vain välttämättömät tarpeet Gatsby-sivustolle.
 
 1. Avaa terminaali.
 2. Luo uusi sivusto starterista:
@@ -255,7 +255,7 @@ Avaa uusi välilehti selaimessa ja siirry kohtaan `http://localhost:8000/`
 
 Onnittelut! Tämä on ensimmäisen Gatsby-sivustosi alku! 🎉
 
-Voit käydä sivustossa lokaalisti osoitteessa `http://localhost:8000/` niin kauan kuin kehityspalvelimesi on käynnissä. Se on prosessi, jonka aloitit suorittamalla `gatsby develop` komennon. Voit lopettaa prosessin suorittamisen (tai “lopettaa kehityspalvelimen suorittamisen”) palaamalla terminaali-ikkunaan, pitämällä control-näppäintä painettuna ja napsauttamalla sitten “c” (ctrl-c). Käynnistä se uudestaan suorittamalla `gatsby develop` komennon uudelleen!
+Voit käydä sivustossa lokaalisti osoitteessa `http://localhost:8000/` niin kauan kuin kehityspalvelimesi on käynnissä. Se on prosessi, jonka aloitit suorittamalla `gatsby develop` komennon. Voit lopettaa prosessin suorittamisen (tai “lopettaa kehityspalvelimen suorittamisen”) palaamalla terminaali-ikkunaan, pitämällä control-näppäintä painettuna ja napsauttamalla sitten “c” (ctrl-c). Käynnistä se uudestaan suorittamalla `gatsby develop` komento uudelleen!
 
 _**Huom:** Jos käytät VM-asetuksia, kuten `vagrant`, ja/tai haluat kuunnella sinun lokaalia IP-osoitettasi, suorita `gatsby develop --host=0.0.0.0`. Nyt kehityspalvelin kuuntelee sekä `http://localhost` että lokaalia IP:tä._
 
@@ -318,7 +318,7 @@ npm on JavaScript-paketinhallinta. Paketti on koodimoduuli, jonka voit valita si
 
 npm:llä on kolme erillistä komponenttia: npm sivusto, npm rekisteri, ja npm komentoriviliittymä (CLI).
 
-- npm verkkosivustolla voit selata, mitä JavaScript-paketteja on saatavilla npm-rekisterissä.
+- npm verkkosivustolla voit selata, mitä JavaScript-paketteja on saatavilla npm rekisterissä.
 - npm rekisteri on suuri tietokanta JavaScript-paketeista, jotka ovat saatavilla npm:ssä.
 - Kun olet tunnistanut haluamasi paketin, voit käyttää npm CLI:tä asentaaksesi sen projektiisi tai globaalisti (kuten muutkin CLI-työkalut). npm CLI on se, mikä puhuu rekisterille - olet yleensä vuorovaikutuksessa vain
 npm verkkosivuston tai npm CLI:n kanssa.
