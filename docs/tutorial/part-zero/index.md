@@ -1,5 +1,5 @@
 ---
-title: Asenna sinun kehitysympäristö
+title: Pystytä sinun kehitysympäristö
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
@@ -15,9 +15,9 @@ _**Huom:** Kaikki ohjeet ovat englanniksi._
 
 Käytä hetki etsiäksesi ja avataksesi komentoriviliittymä (CLI) tietokoneellesi. Riippuen mitä käyttöjärjestelmää käytät, katso [**ohjeet Macille**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/), [**ohjeet Windowsille**](https://www.lifewire.com/how-to-open-command-prompt-2618089) tai [**ohjeet Linuxille**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
 
-_**Huom:** Jos olet uusi komentoriville, "käynnissä" komento, tarkoittaa "kirjoittamalla annetut ohjeet komentokehotteessasi, ja painamalla Enter-näppäintä". Komennot näytetään korostettuna ruudussa, jotakuinkin `node --version`, but kaikki korostetut ruudut eivät ole komentoja! Jos jokin on komento se mainitaan, joka sinun täytyy suorittaa._
+_**Huom:** Jos olet uusi komentoriville, "käynnissä" komento, tarkoittaa "kirjoittamalla annetut ohjeet komentokehotteessasi, ja painamalla Enter-näppäintä". Komennot näytetään korostettuna ruudussa, jokseenkin `node --version`, mutta kaikki korostetut ruudut eivät ole komentoja! Jos jokin on komento se mainitaan, joka sinun täytyy suorittaa._
 
-## Asenna Node.js sopivalle käyttöjärjestelmällesi
+## Asenna Node.js sopivalle käyttöjärjestelmälle
 
 Node.js on ympäristö, joka voi suorittaa JavaScript-koodia verkkoselaimen ulkopuolella. Gatsby on rakennettu Node.js:llä. Jotta pääset alkuun Gatsbyn kanssa, tietokoneellasi on oltava asennettuna viimeisin versio. npm sisältyy Node.js-pakettiin, joten jos sinulla ei ole npm:tä, on todennäköistä, että sinulla ei ole myöskään Node.js:tä.
 
@@ -25,7 +25,7 @@ Node.js on ympäristö, joka voi suorittaa JavaScript-koodia verkkoselaimen ulko
 
 Kun asentaa Gatsbyn ja Node.js:n Macille, on suositeltavaa käyttää [Homebrewiä](https://brew.sh/). Pieni asennus alussa voi pelastaa sinut päänvaivoista myöhemmin!
 
-#### Kuinka asentaa tai varmistaa Homebrewin tietokoneellasi:
+#### Kuinka asentaa tai varmistaa Homebrew tietokoneellasi:
 
 1. Avaa terminaali.
 2. Katso onko Homebrew asennettu. Sinun pitäisi nähdä "Homebrew" ja versionumero.
@@ -154,175 +154,176 @@ nvm --version
 
 #### Aseta oletus Node.js-versio
 
-When nvm is installed, it does not default to a particular node version. You’ll need to install the version you want and give nvm instructions to use it. This example uses the version 10 release, but more recent version numbers can be used instead.
+Kun nvm on asennettu, se ei ole oletus tiettyyn node versioon. Sinun on asennettava haluamasi versio ja annettava nvm:lle ohjeet sen käyttämiseksi. Tässä esimerkissä käytetään version 10 julkaisua, mutta sen sijaan voidaan käyttää uudempia versionumeroita.
 
 ```shell
 nvm install 10
 nvm use 10
 ```
 
-Confirm that this worked:
+Varmista, että tämä toimi:
 
 ```shell
 npm --version
 node --version
 ```
 
-The output should look similar to the screenshot below, showing version numbers in response to the commands.
+Ulostulon tulisi näyttää samanlaiselta kuin alla oleva kuvakaappaus, joka näyttää versionumerot vastauksena komentoihin.
 
-![Check node and npm versions in terminal](01-node-npm-versions.png)
+![Tarkista node ja npm-versiot terminaalissa](01-node-npm-versions.png)
 
-Once you have followed the installation steps and you have checked everything is installed properly, you can continue to the next step.
+Kun olet suorittanut asennusvaiheet ja tarkistanut, että kaikki on asennettu oikein, voit jatkaa seuraavaan vaiheeseen.
 
-## Install Git
+## Asenna Git
 
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. When you install a Gatsby "starter" site, Gatsby uses Git behind the scenes to download and install the required files for your starter. You will need to have Git installed to set up your first Gatsby site.
+Git on ilmainen ja avoimen lähdekoodin hajautettu versionhallintajärjestelmä, joka on suunniteltu käsittelemään kaikkea pienistä erittäin suuriin projekteihin nopeudella ja tehokkuudella. Kun asennat Gatsby "aloitussivun", Gatsby käyttää Git:iä kulissien takana ladataksesi ja install the required files for your starter. You will need to have Git installed to set up your first Gatsby site.
 
-The steps to download and install Git depend on your operating system. Follow the guide for your system:
+Git:in lataus- ja asennusvaiheet riippuvat käyttöjärjestelmästäsi. Seuraa opasta järjestelmällesi:
 
-- [Install Git on macOS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
-- [Install Git on Windows](https://www.atlassian.com/git/tutorials/install-git#windows)
-- [Install Git on Linux](https://www.atlassian.com/git/tutorials/install-git#linux)
+- [Asenna Git macOSille](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
+- [Asenna Git Windowsille](https://www.atlassian.com/git/tutorials/install-git#windows)
+- [Asenna Git Linuxille](https://www.atlassian.com/git/tutorials/install-git#linux)
 
-## Using the Gatsby CLI
+## Gatsby CLI:n käyttö
 
-The Gatsby CLI tool lets you quickly create new Gatsby-powered sites and run commands for developing Gatsby sites. It is a published npm package.
+Gatsby CLI -työkalun avulla voit luoda nopeasti uusia Gatsby-pohjaisia sivustoja ja suorittaa komentoja Gatsby-sivustojen kehittämiseen. Se on julkaistu npm-paketti.
 
-The Gatsby CLI is available via npm and should be installed globally by running:
+Gatsby CLI on saatavana npm:n kautta, ja se tulisi asentaa maailmanlaajuisesti suorittamalla:
 
 ```shell
 npm install -g gatsby-cli
 ```
 
-_**Note**: when you install Gatsby and run it for the first time, you'll see a short message notifying you about anonymous usage data that is being collected for Gatsby commands, you can read more about how that data is pulled out and used in the [telemetry doc](/docs/telemetry)._
+_**Huom**: Kun asennat Gatsbyn ja käytät sitä ensimmäistä kertaa, näet lyhytsanoman, joka ilmoittaa sinulle nimettömistä käyttötiedoista, joita kerätään Gatsby-komennoille. Voit lukea lisää siitä, kuinka nämä tiedot vedetään ja käytetään [telemetryn dokumentaatiossa](/docs/telemetry)._
 
-See the available commands:
+Katso käytettävissä olevat komennot:
 
 ```shell
 gatsby --help
 ```
 
-![Check gatsby commands in terminal](05-gatsby-help.png)
+![Tarkista gatsby-komennot terminaalissa](05-gatsby-help.png)
 
-> 💡 If you are unable to successfully run the Gatsby CLI due to a permissions issue, you may want to check out the [npm docs on fixing permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions), or [this guide](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md).
+> 💡 Jos et pysty suorittamaan Gatsby CLI:tä onnistuneesti käyttöoikeusongelman takia, sinun kannattaa tutustua [npm:n dokumentaatioon oikeuksien korjaamisesta](https://docs.npmjs.com/getting-started/fixing-npm-permissions), tai
+[tämä ohje](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md).
 
-## Create a Gatsby site
+## Luo Gatsby-sivusto
 
-Now you are ready to use the Gatsby CLI tool to create your first Gatsby site. Using the tool, you can download “starters” (partially built sites with some default configuration) to help you get moving faster on creating a certain type of site. The “Hello World” starter you’ll be using here is a starter with the bare essentials needed for a Gatsby site.
+Nyt olet valmis käyttämään Gatsby CLI työkalua ensimmäisen Gatsby-sivustosi luomiseen. Työkalun avulla voit ladata “starter” (osittain rakennettuja sivustoja, joissa on joitain oletusasetuksia), jotta voit siirtyä nopeammin tietyn tyyppisen sivuston luomiseen. The “Hello World” starter you’ll be using here is a starter with the bare essentials needed for a Gatsby site.
 
-1. Open up your terminal.
-2. Create a new site from a starter:
+1. Avaa terminaali.
+2. Luo uusi sivusto starterista:
 
 ```shell
 gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
 
-> 💡 What just happened?
+> 💡 Mitä juuri tapahtui?
 >
-> - `new` is a gatsby command to create a new Gatsby project.
-> - Here, `hello-world` is an arbitrary title — you could pick anything. The CLI tool will place the code for your new site in a new folder called “hello-world”.
-> - Lastly, the GitHub URL specified points to a code repository that holds the starter code you want to use.
+> - `Uusi` on gatsby-komento uuden Gatsby-projektin luomiseen.
+> - Täällä, `hello-world` on mielivaltainen otsikko — voisit valita minkä tahansa. CLI-työkalu sijoittaa uuden sivustosi koodin uuteen kansioon nimeltä “hello-world”.
+> - Viimeiseksi, GitHub URL-osoite osoittaa repolle, joka sisältää haluamasi aloituskoodin.
 
-> 💡 Depending on your download speed, the amount of time this takes will vary. For brevity's sake, the gif below was paused during part of the install
+> 💡 Latausnopeudesta riippuen, tämä aika vaihtelee. Lyhyyden vuoksi alla oleva gif keskeytettiin osan asennuksen aikana.
 
-3. Change into the working directory:
+3. Vaihda toimivaan hakemistoon:
 
 ```shell
 cd hello-world
 ```
 
-> 💡 This says _'I want to change directories (`cd`) to the “hello-world” subfolder'_. Whenever you want to run any commands for your site, you need to be in the context for that site (aka, your terminal needs to be pointed at the directory where your site code lives).
+> 💡 Tämä sanoo _'Haluan vaihtaa hakemiston ("cd") "hello-world" alikansioon'_. Aina kun haluat suorittaa komentoja sivustollesi, sinun on oltava kyseisen sivuston kontekstissa (eli terminaali on osoitettava hakemistoon, jossa koodisi asuu).
 
-4. Start the development mode:
+4. Käynnistä kehitystila:
 
 ```shell
 gatsby develop
 ```
 
-> 💡 This command starts a development server. You will be able to see and interact with your new site in a development environment — local (on your computer, not published to the internet).
+> 💡 Tämä komento käynnistää kehityspalvelimen. Voit nähdä uuden sivustosi ja olla vuorovaikutuksessa sen kanssa kehitysympäristössä - lokaalisessa (tietokoneellasi, ei julkaistu internettiin).
 
 <video controls="controls" autoplay="true" loop="true">
   <source type="video/mp4" src="./03-create-site.mp4" />
-  <p>Sorry! Your browser doesn't support this video.</p>
+  <p>Anteeksi! Selaimesi ei tue tätä videota.</p>
 </video>
 
-### View your site locally
+### Tarkastele sivustoasi lokaalisesti
 
-Open up a new tab in your browser and navigate to `http://localhost:8000/`
+Avaa uusi välilehti selaimessa ja siirry kohtaan `http://localhost:8000/`
 
-![Check homepage](04-home-page.png)
+![Tarkista kotisivu](04-home-page.png)
 
-Congrats! This is the beginning of your very first Gatsby site! 🎉
+Onnittelut! Tämä on ensimmäisen Gatsby-sivustosi alku! 🎉
 
-You’ll be able to visit the site locally at `http://localhost:8000/` for as long as your development server is running. That’s the process you started by running the `gatsby develop` command. To stop running that process (or to “stop running the development server”), go back to your terminal window, hold down the “control” key, and then hit “c” (ctrl-c). To start it again, run `gatsby develop` again!
+Voit käydä sivustossa lokaalisti osoitteessa `http://localhost:8000/` niin kauan kuin kehityspalvelimesi on käynnissä. Se on prosessi, jonka aloitit suorittamalla `gatsby develop` komennon. Voit lopettaa prosessin suorittamisen (tai “lopettaa kehityspalvelimen suorittamisen”) palaamalla terminaali-ikkunaan, pitämällä control-näppäintä painettuna ja napsauttamalla sitten “c” (ctrl-c). Käynnistä se uudestaan suorittamalla `gatsby develop` komennon uudelleen!
 
-_**Note:** If you are using VM setup like `vagrant` and/or would like to listen on your local IP address, run `gatsby develop --host=0.0.0.0`. Now, the development server listens on both `http://localhost` and your local IP._
+_**Huom:** Jos käytät VM-asetuksia, kuten `vagrant`, ja/tai haluat kuunnella sinun lokaalia IP-osoitettasi, suorita `gatsby develop --host=0.0.0.0`. Nyt kehityspalvelin kuuntelee sekä `http://localhost` että lokaalia IP:tä._
 
-## Set up a code editor
+## Pystytä koodieditori
 
-A code editor is a program designed specifically for editing computer code. There are many great ones out there.
+Koodieditori on ohjelma, joka on suunniteltu erityisesti tietokonekoodin muokkaamiseen. Siellä on monia hyviä.
 
-### Download VS Code
+### Lataa VS Code
 
-Gatsby documentation sometimes includes screenshots that were taken in VS Code, so if you don't have a preferred code editor yet, using VS Code will make sure that your screen looks just like the screenshots in the tutorial and docs. If you choose to use VS Code, visit the [VS Code site](https://code.visualstudio.com/#alt-downloads) and download the version appropriate for your platform.
+Gatsby dokumentaatio sisältää toisinaan kuvakaappauksia, jotka on otettu VS Codessa, joten jos sinulla ei vielä ole ensisijaista koodieditoria, VS Coden käyttö varmistaa, että näyttösi näyttää täysin samalta kuin tutoriaalin ja dokumenttien kuvakaappaukset. Jos valitset VS Coden, käy [VS Code sivustolla](https://code.visualstudio.com/#alt-downloads) ja lataa käyttöjärjestelmällesi sopiva versio.
 
-### Install the Prettier plugin
+### Asenna Prettier plugin
 
-We also recommend using [Prettier](https://github.com/prettier/prettier), a tool that helps format your code to avoid errors.
+Suosittelemme myös [Prettierin](https://github.com/prettier/prettier) käyttöä, työkalu, joka auttaa muotoilemaan koodin virheiden välttämiseksi.
 
-You can use Prettier directly in your editor using the [Prettier VS Code plugin](https://github.com/prettier/prettier-vscode):
+Voit käyttää Prettier:iä suoraan editorissa käyttämällä [Prettier VS Code plugin](https://github.com/prettier/prettier-vscode):
 
-1. Open the extensions view on VS Code (View => Extensions).
-2. Search for "Prettier - Code formatter".
-3. Click "Install". (After installation, you'll be prompted to restart VS Code to enable the extension. Newer versions of VS Code will automatically enable the extension after download.)
+1. Avaa laajennusnäkymä VS Codessa (Näytä => laajennukset).
+2. Hae "Prettier - Code formatter".
+3. Paina "Asenna". (Asennuksen jälkeen sinua kehotetaan käynnistämään VS Code uudelleen laajennuksen sallimiseksi. VS Coden uudemmat versiot aktivoivat laajennuksen automaattisesti lataamisen jälkeen.)
 
-> 💡 If you're not using VS Code, check out the Prettier docs for [install instructions](https://prettier.io/docs/en/install.html) or [other editor integrations](https://prettier.io/docs/en/editors.html).
+> 💡 Jos et käytä VS Codea, katso Prettierin [asennusohjeet](https://prettier.io/docs/en/install.html) tai [muiden editorien integroinnit](https://prettier.io/docs/en/editors.html) dokumentaatio.
 
-## ➡️ What’s Next?
+## ➡️ Mitä seuraavaksi?
 
-To summarize, in this section you:
+Lyhyesti, tässä osiossa sinä:
 
-- Learned about the command line and how to use it
-- Installed and learned about Node.js and the npm CLI tool, the version control system Git, and the Gatsby CLI tool
-- Generated a new Gatsby site using the Gatsby CLI tool
-- Ran the Gatsby development server and visited your site locally
-- Downloaded a code editor
-- Installed a code formatter called Prettier
+- Opit komentorivistä ja kuinka sitä käytetään
+- Asensit ja opit Node.js:ää ja npm CLI-työkalusta, versionhallintajärjestelmä Git:in ja Gatsby CLI-työkalun
+- Luoit uuden Gatsby-sivuston Gatsby CLI-työkalun avulla
+- Suoritit Gatsby-kehityspalvelimen ja vierailit sivustollasi lokaalisti
+- Latasit koodieditorin
+- Asensit Prettier-nimisen koodimuotoilijan
 
-Now, move on to [**getting to know Gatsby building blocks**](/tutorial/part-one/).
+Nyt siirry kohtaan [**tutustuminen Gatsbyn rakennuspalikoihin**](/tutorial/part-one/).
 
-## References
+## Viitteet
 
-### Overview of core technologies
+### Yleiskatsaus ydinteknologioihin
 
-It’s not necessary to be an expert with these already — if you’re not, don’t worry! You’ll pick up a lot through the course of this tutorial series. These are some of the main web technologies you’ll use when building a Gatsby site:
+Ei ole välttämätöntä olla asiantuntija näissä jo — jos et ole, älä huoli! Keräät paljon tietoa tämän tutoriaalisarjan aikana. Nämä ovat tärkeimmistä verkkotekniikoista, joita käytät rakentaessasi Gatsby-sivustoa:
 
-- **HTML**: A markup language that every web browser is able to understand. It stands for HyperText Markup Language. HTML gives your web content a universal informational structure, defining things like headings, paragraphs, and more.
-- **CSS**: A presentational language used to style the appearance of your web content (fonts, colors, layout, etc). It stands for Cascading Style Sheets.
-- **JavaScript**: A programming language that helps us make the web dynamic and interactive.
-- **React**: A code library (built with JavaScript) for building user interfaces. It’s the framework that Gatsby uses to build pages and structure content.
-- **GraphQL**: A query language that allows you to pull data into your website. It’s the interface that Gatsby uses for managing site data.
+- **HTML**: Merkintäkieli, jonka jokainen selain pystyy ymmärtämään. Se tarkoittaa HyperText Markup Language. HTML antaa verkkosisällöllesi universaalin informaatiorakenteen, joka määrittelee esimerkiksi otsikot, kappaleet ja muut.
+- **CSS**: Esityskieli, jota käytetään verkkosisällön (kirjasimet, värit, asettelu jne.) ulkoasun muotoiluun. Se tarkoittaa Cascading Style Sheets.
+- **JavaScript**: Ohjelmointikieli, joka auttaa meitä tekemään verkosta dynaamisen ja vuorovaikutteisen.
+- **React**: Koodikirjasto (rakennettu JavaScriptillä) käyttöliittymien rakentamiseen. Se on framework, jota Gatsby käyttää sivujen rakentamiseen ja sisällön rakentamiseen.
+- **GraphQL**: Kyselykieli, jonka avulla voit vetää tietoja verkkosivustollesi. Se on käyttöliittymä, jota Gatsby käyttää sivustotietojen hallintaan.
 
-### What is a website?
+### Mikä on verkkosivusto?
 
-For a comprehensive introduction to what a website is -- including an intro to HTML and CSS -- check out “[**Building your first web page**](https://learn.shayhowe.com/html-css/building-your-first-web-page/)”. It’s a great place to start learning about the web. For a more hands-on introduction to [**HTML**](https://www.codecademy.com/learn/learn-html), [**CSS**](https://www.codecademy.com/learn/learn-css), and [**JavaScript**](https://www.codecademy.com/learn/introduction-to-javascript), check out the tutorials from Codecademy. [**React**](https://reactjs.org/tutorial/tutorial.html) and [**GraphQL**](https://graphql.org/graphql-js/) also have their own introductory tutorials.
+Katsaus verkkosivuston kattavaan esittelyyn - mukaan lukien HTML- ja CSS-esittely -- tarkista “[**Ensimmäisen verkkosivustosi rakentaminen**](https://learn.shayhowe.com/html-css/building-your-first-web-page/)”. Se on hyvä paikka aloittaa oppimisen verkosta. Lisätietoja enemmän käytännöllisestä johdannosta [**HTML**](https://www.codecademy.com/learn/learn-html), [**CSS**](https://www.codecademy.com/learn/learn-css), ja [**JavaScript**](https://www.codecademy.com/learn/introduction-to-javascript), tarkista tutoriaalit Codecademystä. [**Reactillä**](https://reactjs.org/tutorial/tutorial.html) ja [**GraphQL:lä**](https://graphql.org/graphql-js/) on myös omat johdanto tutoriaalit.
 
-### Learn more about the command line
+### Opi lisää komentorivistä
 
-For a great introduction to using the command line, check out [**Codecademy’s Command Line tutorial**](https://www.codecademy.com/courses/learn-the-command-line/lessons/navigation/exercises/your-first-command) for Mac and Linux users, and [**this tutorial**](https://www.computerhope.com/issues/chusedos.htm) for Windows users. Even if you are a Windows user, the first page of the Codecademy tutorial is a valuable read. It explains what the command line is, not just how to interface with it.
+Hyvään johdantoon komentorivin käyttöön, tarkista [**Codecademyn komentorivi tutoriaali**](https://www.codecademy.com/courses/learn-the-command-line/lessons/navigation/exercises/your-first-command) Mac ja Linux käyttäjille, ja [**tämä tutoriaali**](https://www.computerhope.com/issues/chusedos.htm) Windows käyttäjille. Vaikka olet Windowsin käyttäjä, Codecademy tutoriaalin ensimmäinen sivu on arvokas lukea. Se selittää komentorivin, ei vain miten interface sen kanssa.
 
-### Learn more about npm
 
-npm is a JavaScript package manager. A package is a module of code that you can choose to include in your projects. If you just downloaded and installed Node.js, npm was installed with it!
+npm on JavaScript-paketinhallinta. Paketti on koodimoduuli, jonka voit valita sisällyttävän projektiisi. Jos olet juuri ladannut ja asentanut Node.js:n, npm asennettiin sen mukana!
 
-npm has three distinct components: the npm website, the npm registry, and the npm command line interface (CLI).
+npm:llä on kolme erillistä komponenttia: npm sivusto, npm rekisteri, ja npm komentoriviliittymä (CLI).
 
-- On the npm website, you can browse what JavaScript packages are available in the npm registry.
-- The npm registry is a large database of information about JavaScript packages available on npm.
-- Once you’ve identified a package you want, you can use the npm CLI to install it in your project or globally (like other CLI tools). The npm CLI is what talks to the registry — you generally only interact with the npm website or the npm CLI.
+- npm verkkosivustolla voit selata, mitä JavaScript-paketteja on saatavilla npm-rekisterissä.
+- npm rekisteri on suuri tietokanta JavaScript-paketeista, jotka ovat saatavilla npm:ssä.
+- Kun olet tunnistanut haluamasi paketin, voit käyttää npm CLI:tä asentaaksesi sen projektiisi tai globaalisti (kuten muutkin CLI-työkalut). npm CLI on se, mikä puhuu rekisterille - olet yleensä vuorovaikutuksessa vain
+npm verkkosivuston tai npm CLI:n kanssa.
 
-> 💡 Check out npm’s introduction, “[**What is npm?**](https://docs.npmjs.com/getting-started/what-is-npm)”.
+> 💡 Tarkista npm:n johdanto, “[**Mikä on npm?**](https://docs.npmjs.com/getting-started/what-is-npm)”.
 
-### Learn more about Git
+### Opi lisää Git:istä
 
-You will not need to know Git to complete this tutorial, but it is a very useful tool. If you are interested in learning more about version control, Git, and GitHub, check out GitHub's [Git Handbook](https://guides.github.com/introduction/git-handbook/).
+Sinun ei tarvitse tietää Git:iä saada valmiiksi tätä tutoriaalia, mutta se on erittäin hyödyllinen työkalu. Jos olet kiinnostunut oppimaan lisää versionhallinnasta, Git:istä ja GitHubista, tarkista GitHubin [Git Käsikirja](https://guides.github.com/introduction/git-handbook/).
