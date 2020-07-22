@@ -15,7 +15,7 @@ _**Huom:** Kaikki ohjeet ovat englanniksi._
 
 Käytä hetki etsiäksesi ja avataksesi komentoriviliittymä (CLI) tietokoneellesi. Riippuen mitä käyttöjärjestelmää käytät, katso [**ohjeet Macille**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/), [**ohjeet Windowsille**](https://www.lifewire.com/how-to-open-command-prompt-2618089) tai [**ohjeet Linuxille**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
 
-_**Huom:** Jos olet uusi komentoriville, "käynnissä" komento, tarkoittaa "kirjoittamalla annetut ohjeet komentokehotteessasi, ja painamalla Enter-näppäintä". Komennot näytetään korostettuna ruudussa, jokseenkin `node --version`, mutta kaikki korostetut ruudut eivät ole komentoja! Jos jokin on komento se mainitaan, joka sinun täytyy suorittaa._
+_**Huom:** Jos olet uusi komentoriville, "käynnissä" komento, tarkoittaa "kirjoittamalla annetut ohjeet komentokehotteessasi, ja painamalla Enter-näppäintä". Komennot näytetään korostettuna ruudussa, jotakuinkin `node --version`, mutta kaikki korostetut ruudut eivät ole komentoja! Jos jokin on komento se mainitaan, joka sinun täytyy suorittaa._
 
 ## Asenna Node.js sopivalle käyttöjärjestelmälle
 
