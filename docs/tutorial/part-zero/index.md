@@ -312,6 +312,7 @@ Katsaus verkkosivuston kattavaan esittelyyn - mukaan lukien HTML- ja CSS-esittel
 
 Hyvään johdantoon komentorivin käyttöön, tarkista [**Codecademyn komentorivi tutoriaali**](https://www.codecademy.com/courses/learn-the-command-line/lessons/navigation/exercises/your-first-command) Mac ja Linux käyttäjille, ja [**tämä tutoriaali**](https://www.computerhope.com/issues/chusedos.htm) Windows käyttäjille. Vaikka olet Windowsin käyttäjä, Codecademy tutoriaalin ensimmäinen sivu on arvokas lukea. Se selittää komentorivin, ei vain miten interface sen kanssa.
 
+### Opi lisää npm:stä
 
 npm on JavaScript-paketinhallinta. Paketti on koodimoduuli, jonka voit valita sisällyttävän projektiisi. Jos olet juuri ladannut ja asentanut Node.js:n, npm asennettiin sen mukana!
 
