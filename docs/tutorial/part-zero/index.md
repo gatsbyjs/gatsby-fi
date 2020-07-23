@@ -1,17 +1,14 @@
 ---
-title: Pystytä sinun kehitysympäristö
+title: Pystytä kehitysympäristösi
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Ennen kuin aloitat sinun ensimmäisen Gatsby-sivuston rakentamisen, sinun on perehdyttävä joihinkin ydin web-teknologioihin ja varmistettava, että olet asentanut kaikki vaadittavat ohjelmistotyökalut.
+Ennen kuin aloitat ensimmäisen Gatsby-sivustosi rakentamisen, sinun on perehdyttävä joihinkin ydinweb-teknologioihin ja varmistettava, että olet asentanut kaikki vaadittavat ohjelmistotyökalut.
 
 ## Tutustu komentoriviin
 
-Komentorivi on tekstipohjainen käyttöliittymä, jota käytetään komentojen suorittamiseen tietokoneellasi. Saatat myös nähdä, että sitä kutsutaan terminaaliksi. Käytämme tässä tutoriaalissa molempia keskenään vaihtokelpoisesti.
-Se on paljon kuin Finderin käyttö Macissa tai Resurssienhallinta Windowsissa. Finder ja Explorer ovat esimerkkejä graafisista käyttöliittymistä (GUI). Komentorivi on tehokas, tekstipohjainen tapa olla vuorovaikutuksessa tietokoneesi kanssa.
-
-_**Huom:** Kaikki ohjeet ovat englanniksi._
+Komentorivi on tekstipohjainen käyttöliittymä, jota käytetään komentojen suorittamiseen tietokoneellasi. Usein sitä voidaan kutsuta myös terminaaliksi. Käytämme tässä tutoriaalissa molempia vaihtokelpoisesti. Sen käyttö muistuttaa paljon Finderin käyttöä Macilla tai Resurssienhallintaa Windowsissa. Finder ja Resurssienhallinta ovat esimerkkejä graafisista käyttöliittymistä (GUI). Komentorivi on tehokas, tekstipohjainen tapa olla vuorovaikutuksessa tietokoneesi kanssa.
 
 Käytä hetki etsiäksesi ja avataksesi komentoriviliittymä (CLI) tietokoneellesi. Riippuen mitä käyttöjärjestelmää käytät, katso [**ohjeet Macille**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/), [**ohjeet Windowsille**](https://www.lifewire.com/how-to-open-command-prompt-2618089) tai [**ohjeet Linuxille**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
 
@@ -176,9 +173,9 @@ Kun olet suorittanut asennusvaiheet ja tarkistanut, että kaikki on asennettu oi
 
 ## Asenna Git
 
-Git on ilmainen ja avoimen lähdekoodin hajautettu versionhallintajärjestelmä, joka on suunniteltu käsittelemään kaikkea pienistä erittäin suuriin projekteihin nopeudella ja tehokkuudella. Kun asennat Gatsby "aloitussivun", Gatsby käyttää Git:iä kulissien takana ladataksesi ja asenna starterille tarvittavat tiedostot. Sinulla on oltava asennettuna Git asentaaksesi ensimmäisen Gatsby-sivustosi.
+Git on ilmainen ja avoimen lähdekoodin hajautettu versionhallintajärjestelmä, joka on suunniteltu käsittelemään kaikkea pienistä erittäin suuriin projekteihin nopeudella ja tehokkuudella. Kun asennat Gatsby "aloitussivun", Gatsby käyttää Gitiä kulissien takana ladataksesi ja asenna starterille tarvittavat tiedostot. Sinulla on oltava asennettuna Git asentaaksesi ensimmäisen Gatsby-sivustosi.
 
-Git:in lataus- ja asennusvaiheet riippuvat käyttöjärjestelmästäsi. Seuraa opasta järjestelmällesi:
+Gitin lataus- ja asennusvaiheet riippuvat käyttöjärjestelmästäsi. Seuraa opasta järjestelmällesi:
 
 - [Asenna Git macOSille](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
 - [Asenna Git Windowsille](https://www.atlassian.com/git/tutorials/install-git#windows)
@@ -232,7 +229,7 @@ gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 cd hello-world
 ```
 
-> 💡 Tämä sanoo _'Haluan vaihtaa hakemiston ("cd") "hello-world" alikansioon'_. Aina kun haluat suorittaa komentoja sivustollesi, sinun on oltava kyseisen sivuston kontekstissa (eli terminaali on osoitettava hakemistoon, jossa koodisi asuu).
+> 💡 Tämä sanoo _'Haluan vaihtaa hakemiston ("cd") "hello-world" alikansioon'_. Aina kun haluat suorittaa komentoja sivustollesi, sinun on oltava kyseisen sivuston kontekstissa (eli terminaalin on osoitettava hakemistoon, jossa koodisi asuu).
 
 4. Käynnistä kehitystila:
 
@@ -240,14 +237,14 @@ cd hello-world
 gatsby develop
 ```
 
-> 💡 Tämä komento käynnistää kehityspalvelimen. Voit nähdä uuden sivustosi ja olla vuorovaikutuksessa sen kanssa kehitysympäristössä - lokaalisessa (tietokoneellasi, ei julkaistu internettiin).
+> 💡 Tämä komento käynnistää kehityspalvelimen. Voit nähdä uuden sivustosi ja olla vuorovaikutuksessa sen kanssa kehitysympäristössä - lokaalisesti (tietokoneellasi, ei julkaistuna internettiin).
 
 <video controls="controls" autoplay="true" loop="true">
   <source type="video/mp4" src="./03-create-site.mp4" />
   <p>Anteeksi! Selaimesi ei tue tätä videota.</p>
 </video>
 
-### Tarkastele sivustoasi lokaalisesti
+### Katso sivustoasi lokaalisesti
 
 Avaa uusi välilehti selaimessa ja siirry kohtaan `http://localhost:8000/`
 
@@ -265,26 +262,26 @@ Koodieditori on ohjelma, joka on suunniteltu erityisesti tietokonekoodin muokkaa
 
 ### Lataa VS Code
 
-Gatsby dokumentaatio sisältää toisinaan kuvakaappauksia, jotka on otettu VS Codessa, joten jos sinulla ei vielä ole ensisijaista koodieditoria, VS Coden käyttö varmistaa, että näyttösi näyttää täysin samalta kuin tutoriaalin ja dokumenttien kuvakaappaukset. Jos valitset VS Coden, käy [VS Code sivustolla](https://code.visualstudio.com/#alt-downloads) ja lataa käyttöjärjestelmällesi sopiva versio.
+Gatsbyn dokumentaatio sisältää toisinaan kuvakaappauksia, jotka on otettu VS Codessa, joten jos sinulla ei vielä ole ensisijaista koodieditoria, VS Coden käyttö varmistaa, että näyttösi näyttää täysin samalta kuin tutoriaalin ja dokumenttien kuvakaappaukset. Jos valitset VS Coden, käy [VS Code sivustolla](https://code.visualstudio.com/#alt-downloads) ja lataa käyttöjärjestelmällesi sopiva versio.
 
 ### Asenna Prettier plugin
 
-Suosittelemme myös [Prettierin](https://github.com/prettier/prettier) käyttöä, työkalu, joka auttaa muotoilemaan koodin virheiden välttämiseksi.
+Suosittelemme myös [Prettier](https://github.com/prettier/prettier) työkalun käyttöä, joka auttaa muotoilemaan koodin virheiden välttämiseksi.
 
-Voit käyttää Prettier:iä suoraan editorissa käyttämällä [Prettier VS Code plugin](https://github.com/prettier/prettier-vscode):
+Voit käyttää Prettieriä suoraan editorissasi käyttämällä [Prettier VS Code pluginia](https://github.com/prettier/prettier-vscode):
 
 1. Avaa laajennusnäkymä VS Codessa (Näytä => laajennukset).
 2. Hae "Prettier - Code formatter".
 3. Paina "Asenna". (Asennuksen jälkeen sinua kehotetaan käynnistämään VS Code uudelleen laajennuksen sallimiseksi. VS Coden uudemmat versiot aktivoivat laajennuksen automaattisesti lataamisen jälkeen.)
 
-> 💡 Jos et käytä VS Codea, katso Prettierin [asennusohjeet](https://prettier.io/docs/en/install.html) tai [muiden editorien integroinnit](https://prettier.io/docs/en/editors.html) dokumentaatio.
+> 💡 Jos et käytä VS Codea, katso Prettierin [asennusohjeen](https://prettier.io/docs/en/install.html) tai [muiden editorien integroinnin](https://prettier.io/docs/en/editors.html) dokumentaatio.
 
 ## ➡️ Mitä seuraavaksi?
 
 Lyhyesti, tässä osiossa sinä:
 
 - Opit komentorivistä ja kuinka sitä käytetään
-- Asensit ja opit Node.js:ää ja npm CLI-työkalusta, versionhallintajärjestelmä Git:in ja Gatsby CLI-työkalun
+- Asensit ja opit Node.js:ää ja npm CLI-työkalusta, versionhallintajärjestelmä Gitin ja Gatsby CLI-työkalun
 - Luoit uuden Gatsby-sivuston Gatsby CLI-työkalun avulla
 - Suoritit Gatsby-kehityspalvelimen ja vierailit sivustollasi lokaalisti
 - Latasit koodieditorin
@@ -325,6 +322,6 @@ npm verkkosivuston tai npm CLI:n kanssa.
 
 > 💡 Tarkista npm:n johdanto, “[**Mikä on npm?**](https://docs.npmjs.com/getting-started/what-is-npm)”.
 
-### Opi lisää Git:istä
+### Opi lisää Gitistä
 
-Sinun ei tarvitse tietää Git:iä saada valmiiksi tätä tutoriaalia, mutta se on erittäin hyödyllinen työkalu. Jos olet kiinnostunut oppimaan lisää versionhallinnasta, Git:istä ja GitHubista, tarkista GitHubin [Git Käsikirja](https://guides.github.com/introduction/git-handbook/).
+Sinun ei tarvitse tietää Gitiä saada valmiiksi tätä tutoriaalia, mutta se on erittäin hyödyllinen työkalu. Jos olet kiinnostunut oppimaan lisää versionhallinnasta, Gitistä ja GitHubista, tarkista GitHubin [Git Käsikirja](https://guides.github.com/introduction/git-handbook/).
