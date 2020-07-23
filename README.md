@@ -1,15 +1,11 @@
+# Gatsbyn suomenkielinen käännös
 
-# Gatsby Finnish Translation
+Tämä repo sisältää Gatsbyn suomenkielisen käännöksen.
 
-This repo contains the Finnish translation for Gatsby.
+[Täältä](https://github.com/gatsbyjs/gatsby-fi/issues/4) voit seurata käännöksen etenemistä ja varmistaa, ettei kukaan ole vielä aloittanut jonkin osion kääntämistä.
 
-Please refer to the [Translation Progress Issue](https://github.com/gatsbyjs/gatsby-fi/issues/1) to start translating!
-
-Useful Links:
+Hyödylliset linkit:
 
 * [Style Guide](/style-guide.md)
-* [Gatsby Translation Guide](https://www.gatsbyjs.org/contributing/gatsby-docs-translation-guide/)
+* [Gatsbyn käännösohje](https://www.gatsbyjs.org/contributing/gatsby-docs-translation-guide/): Lue ennen kun aloitat kääntämisen.
 * [Gatsby Discord](https://gatsby.dev/discord)
-
-(Feel free to translate this document and add any content you feel would be useful to contributors).
-  
