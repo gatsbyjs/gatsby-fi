@@ -74,7 +74,7 @@ React elements are [immutable](https://en.wikipedia.org/wiki/Immutable_object).
 ✅ OK:
 
 ```md
-Reactin elementit ovat muuttumattomia.
+Reactin elementit ovat [muuttumattomia](https://en.wikipedia.org/wiki/Immutable_object).
 ```
 
 For links that have no equivalent (Stack Overflow, YouTube videos, etc.), just use the English link.
